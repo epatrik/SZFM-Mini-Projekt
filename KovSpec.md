@@ -8,7 +8,7 @@ A Kvíznélküli Mihály Általános Iskolánkban jelenleg csak tankönyvekből 
 
 Ideális esetben egy egyszerűen átlátható és használható feleletválasztós kvízt akarnánk, ami felkelti a figyelmét azoknak akik használják, és arra törekvik őket, hogy bővebben is utánanézzenek azokra a témákra amik felkeltették érdeklődésüket.
 
-## Igényelt üzleti folyamatok modellje
+## Igényelt üzleti folyamatok leírása
 1. Kvíz Kitöltése
 - Cél: A felhasználók kitölthetik a kvízt, válaszokat adnak a kérdésekre, majd az oldal kiértékeli a válaszaikat és megjeleníti az eredményüket.
 - Leírás:
