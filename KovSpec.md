@@ -8,9 +8,25 @@ A Kvíznélküli Mihály Általános Iskolánkban jelenleg csak tankönyvekből 
 
 Ideális esetben egy egyszerűen átlátható és használható feleletválasztós kvízt akarnánk, ami felkelti a figyelmét azoknak akik használják, és arra törekvik őket, hogy bővebben is utánanézzenek azokra a témákra amik felkeltették érdeklődésüket.
 
-## Jelenlegi üzleti folyamatok modellje
-
 ## Igényelt üzleti folyamatok modellje
+1. Kvíz Kitöltése
+- Cél: A felhasználók kitölthetik a kvízt, válaszokat adnak a kérdésekre, majd az oldal kiértékeli a válaszaikat és megjeleníti az eredményüket.
+- Leírás:
+- A felhasználók elérhetik a weboldalt és kiválaszthatják a kitöltendő kvízt.
+  - A felhasználók a kérdésekre válaszokat adnak.
+  - Az oldal nyomon követi a válaszokat és ellenőrzi, hogy helyesek-e.
+  - Az oldal megjeleníti az eredményt, például a helyes válaszok számát és az elért pontszámot.
+2. Kvíz Készítése
+- Cél: Adminisztrátorok létrehozhatnak új kvízeket és kérdéseket a weboldalon.
+- Leírás:
+  - Csak adminisztrátoroknak van hozzáférésük ehhez a funkcióhoz.
+  - Az adminisztrátorok létrehozhatnak új kérdéseket az adott témakörökön belül, valamint meghatározhatják a helyes válaszokat.
+3. Eredmények Megjelenítése
+- Cél: Az oldal megjeleníti a kvíz kitöltése során elért eredményeket a felhasználók számára.
+- Leírás:
+  - Az oldal azonnal megjeleníti az eredményt, amint a felhasználó befejezte a kvíz kitöltését.
+  - Az eredmény tartalmazza a helyes válaszok számát és az elért pontszámot.
+  - Az eredmény megjelenítése után a felhasználók visszaléphetnek az oldal kezdőlapjára vagy választhatnak egy újabb kvízt a kitöltéshez.
 
 ## Követelménylista
 
