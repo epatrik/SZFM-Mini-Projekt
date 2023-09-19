@@ -1,1 +1,1 @@
-# Modszertan-Mini-Projekt
+# Módszertan Mini Projekt
