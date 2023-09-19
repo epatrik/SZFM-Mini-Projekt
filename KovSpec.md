@@ -10,20 +10,40 @@ Ennek egy megoldásaként szeretnénk egy kvíz alapú tanulási módszerrel fel
 
 Ideális esetben egy egyszerűen átlátható és használható feleletválasztós kvízt akarnánk, ami felkelti a figyelmét azoknak akik használják, és arra törekvik őket, hogy bővebben is utánanézzenek azokra a témákra amik felkeltették érdeklődésüket.
 
+## Jelenlegi üzleti folyamatok leírása
+
+Jelenleg ha a tanárok kvízt szeretnének a diákoknak adni
+
+1. Otthon külön össze kell írniuk kérdéseket
+2. Word dokumentumban összeállítani egy saját kérdéssort
+3. Kinyomtatni azt otthon vagy az iskolai nyomtatón
+4. Kiosztani a papírokat az osztályban
+5. Beszedni a diákoktól
+6. Hazavinni
+7. Otthon egyesével magának kijavítani
+
+Ez egy lassú, hosszadalmas és költséges folyamat, melyet egy alkalmazás jelentősen leegyszerüsítene.
+
 ## Igényelt üzleti folyamatok leírása
+
 1. Kvíz Kitöltése
+
 - Cél: A felhasználók kitölthetik a kvízt, válaszokat adnak a kérdésekre, majd az oldal kiértékeli a válaszaikat és megjeleníti az eredményüket.
 - Leírás:
 - A felhasználók elérhetik a weboldalt és kiválaszthatják a kitöltendő kvízt.
   - A felhasználók a kérdésekre válaszokat adnak.
   - Az oldal nyomon követi a válaszokat és ellenőrzi, hogy helyesek-e.
   - Az oldal megjeleníti az eredményt, például a helyes válaszok számát és az elért pontszámot.
+
 2. Kvíz Készítése
+
 - Cél: Adminisztrátorok létrehozhatnak új kvízeket és kérdéseket a weboldalon.
 - Leírás:
   - Csak adminisztrátoroknak van hozzáférésük ehhez a funkcióhoz.
   - Az adminisztrátorok létrehozhatnak új kérdéseket az adott témakörökön belül, valamint meghatározhatják a helyes válaszokat.
+
 3. Eredmények Megjelenítése
+
 - Cél: Az oldal megjeleníti a kvíz kitöltése során elért eredményeket a felhasználók számára.
 - Leírás:
   - Az oldal azonnal megjeleníti az eredményt, amint a felhasználó befejezte a kvíz kitöltését.
