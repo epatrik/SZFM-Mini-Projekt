@@ -75,8 +75,36 @@ Ez egy lassú, hosszadalmas és költséges folyamat, melyet egy alkalmazás jel
 
 ## Használati esetek
 
-A felhasználó kiválasztja a kvíz témáját és elkezdi annak megoldását. A kvíz megoldása folyamán bármikor ki lehet lépni. Amikor a felhasználó megválaszolt adott számú kérdést, a kvíz befejeződik és lehetőség van újbóli megoldására
+A felhasználó kiválasztja a kvíz témáját és elkezdi annak megoldását. A kvíz megoldása folyamán bármikor ki lehet lépni. Amikor a felhasználó megválaszolt adott számú kérdést, a kvíz befejeződik és lehetőség van újbóli megoldására.
 
 ![Eset](Image/funkspec_hasznalati_eset1.png)
 
 ## Képernyő tervek
+
+Az első képernyőterv a kvíz elindítását megelőzően látható kép. Egy kvíz befejezését követően, szintén ide ide kerül vissza a felhasználó.
+
+![terv1](Image/kepernyokep1.png)
+
+---
+
+A második képernyőterv a kvíz témájának kiválasztását reprezentálja. A felhasználó a téma választást követően megkezdi a kvíz megoldását, vagy lehetősége van a kezdőképernyőre visszatérni.
+
+![terv2](Image/kepernyokep2.png)
+
+---
+
+A harmadik képernyőterv a kvíz egyik kérdésének még megválaszolatlan állapotát reprezentálja. Itt látható is az eddig megszerzett pontok száma, illetve az eltelt idő. A kvíz megoldása közben bármikor lehetőség van visszatérni a kezdőképernyőre.
+
+![terv3](Image/kepernyokep4.png)
+
+---
+
+A negyedik képernyőterv a kvíz egyik kérdésének a megválaszolása utáni állapotát reprezentálja. A felhasználó látja, hogy mi volt a helyes válasz, és folytathatja a következő kérdéssel (feltéve, hogy még van) vagy visszatérhet a kezdőképernyőre.
+
+![terv4](Image/kepernyokep3.png)
+
+---
+
+Az ötödik képernyőkép a kvíz megoldását követő eredmény kiírást reprezentálja. Itt a felhasználó láthatja az elért pontszámát, illetve az eltelt időt. Innen a felhasználó visszatérhet a kezdőképernyőre, ahol lehetősége van a kvíz újbóli megoldására.
+
+![terv5](Image/kepernyokep5.png)
