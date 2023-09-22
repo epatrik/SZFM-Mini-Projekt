@@ -9,15 +9,20 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 ## Projektterv
 
 ## Üzleti folyamatok modellje
+
 ### Üzleti szereplők
+
 **Felhasználó:** A *felhasználók*, akik a kvízeket megoldhatják.
+
 **Fejlesztő:** A *fejlesztők* feladata:
+
 - Probléma kezelés: Biztosítani a rendszer megfelelő, hibamentes működését.
 - További témák hozzáadása: Újabb témák, illetve az azokhoz tartozó kérdések halmazával bővíteni a rendszert.
 - Meglévő témák/kérdések megváltoztatása, javítása: Hibás kérdések/válaszok javítása.
-- Rendszerkarbantartás 
+- Rendszerkarbantartás
 
 ### Üzleti folyamatok
+
 1. **A kvíz elindítása:** A felhasználó kiválasztja a kvíz témáját és megkezdi annak megoldását:
     - Bemenet: Felhasználó kiválasztja a témát.
     - Kimenet: Az választott témához kapcsolódó random kérdések és válaszlehetőségek.
@@ -29,7 +34,8 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 3. **A kvíz kiértékelése:** A felhasználó, minden kérdés megválaszolását követően megnézheti a kvíz eredményét:
     - Bemenet: A felhasználó az utolsó kérdésen továbblépve jut el a kvíz kiértékeléséhez. A felhasználó visszatérhet a kezdőképernyőre.
     - Kimenet: A felhasználó láthatja, a helyesen megválaszolt kérdések számát, az elért pontszámot és az eltelt időt.
-    - Szereplők: Felhasználó       
+    - Szereplők: Felhasználó
+
 ## Követelmények
 
 1. ### Átláthatóság
@@ -46,10 +52,10 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 
     *Leírás követelmény specifikációban: Mivel a kvíz főleg gyerekek számára van tervezve nagyon fontos, hogy a weboldalnak szép kinézete legyen.*
 
-    Színes háttér, ami válaszadáskor megváltozik helyesség szerint. 
-    Vizuális jelzés, ha az egered egy gomb felett van. 
+    Színes háttér, ami válaszadáskor megváltozik helyesség szerint.
+    Vizuális jelzés, ha az egered egy gomb felett van.
 
-3. ### Kérdések véletlenszerű megjelenítése   
+3. ### Kérdések véletlenszerű megjelenítése
 
     *Leírás követelmény specifikációban: A kérdéseknek minden indításkor véletlenszrű sorrendben kell megjelennie egymás után.*
 
@@ -78,7 +84,7 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 
     *Leírás követelmény specifikációban: A kvíz végén meg kell jeleníteni hogyan teljesített a felhasználó elért pont/max pont vagy százalék formájában.*
 
-    Ha nincs több kérdés, akkor meg kell jeleníteni az end screen-t. 
+    Ha nincs több kérdés, akkor meg kell jeleníteni az end screen-t.
     Ezen látható az elért eredmény helyes válasz/összes válasz formában.
 
 8. ### Újrakezdés gomb
@@ -91,11 +97,13 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 
     *Leírás követelmény specifikációban: A kvíz indítása előtt lehessen több téma közül választani, ami meghatározza milyen kérdések jelennek meg.*
 
-    A kvíz elkezdéséhez témát is kell választani, amely befolyásolja a kérdések tárgyát. 
+    A kvíz elkezdéséhez témát is kell választani, amely befolyásolja a kérdések tárgyát.
     Sose legyen kérdés olyan témából, ami nem lett kiválasztva.
 
 ## Funkcionális terv
+
 ### Menühierarchia
+
 1. Az alkalmazás főképernyője egy szimpla, a kvíz elindítására szolgáló menü.
 2. A következő képernyő a kvíz témájának kiválasztására szolgál.
 3. A téma kiválasztásával, a rendszer megkeresi az adott témához tartozó adatokat, és véletlenszerűen kiválasztja a kérdéseket, az ahhoz tartozó válaszokkal együtt.
@@ -106,6 +114,7 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 ---
 
 ### Rendszerhasználati esetek
+
 **Az adott témához tartozó kérdések kiválasztása:** A rendszer végigmegy a témához tartózó kérdéseken, azokból véletlenszerűen kiválaszt adott számú kérdést, ehhez többször végig iterál a kérdéseken és a már kiválasztott kérdéseket eltárolja, ezzel elkerülve egy kérdés többszöri előfordulását egy kvíz megoldásában.
 
 ![temavalasztas](Image/kviz_temavalasztas.png)
@@ -114,7 +123,47 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 
 ![megoldas](Image/kviz_megoldas.png)
 
-## Fizikai környezet
+## Fizikai Környezet
+
+Az alkalmazás a felhőalapú szerverekre és az internetre támaszkodik, így a felhasználók bármely modern böngésző segítségével hozzáférhetnek hozzá.
+Az alábbiakban részletezem a fizikai környezet főbb elemeit:
+
+### Szerverek
+
+- Felhőalapú Szerverek:
+Az alkalmazás szerveroldali része felhőalapú infrastruktúrán fut.
+A szerverek a felhasználói kéréseket fogadják és feldolgozzák, valamint az adatbázis hozzáférést kezelik.
+
+- Adatbázis Szerver:
+Az alkalmazás adatbázisa a kérdéseket, válaszokat, témákat és eredményeket tárolja.
+
+### Felhasználói Eszközök
+
+- Számítógépek:
+A felhasználók a kvíz kitöltéséhez számítógépeket használnak, amelyeken egy modern webböngésző fut.
+Ezek a számítógépek lehetnek asztali gépek vagy hordozható laptopok.
+
+- Okostelefonok és Táblagépek:
+Az alkalmazásnak reszponzívnek kell lennie, hogy a felhasználók okostelefonokon és táblagépeken is használhassák.
+Ezek az eszközök különböző méretű képernyőkkel rendelkeznek, és a weboldalnak alkalmazkodnia kell hozzájuk.
+
+### Internetkapcsolat
+
+Az alkalmazás működéséhez szükség van internetkapcsolatra, mivel a szerverekre való csatlakozás és az adatok lekérése online történik.
+Az internetkapcsolat megbízható és gyors kell legyen annak érdekében, hogy a felhasználók zökkenőmentesen használhassák az alkalmazást.
+
+### Operációs Rendszer
+
+A felhasználói számítógépek különböző operációs rendszereken futnak, például Windows, macOS vagy Linux.
+Az alkalmazásnak platformfüggetlennek kell lennie, és kompatibilisnek kell lennie a leggyakrabban használt böngészőkkel, például Chrome, Firefox, Safari és Edge.
+
+### Biztonság
+
+Az alkalmazásnak megfelelő biztonsági intézkedéseket kell tartalmaznia, hogy megvédje az adatokat és a felhasználók személyes információit.
+Ez magában foglalja a biztonságos kapcsolatot (SSL), a hitelesítést, a jogosultságkezelést és a tűzfalakat.
+
+A fizikai környezet részeként fontos megjegyezni, hogy az alkalmazás üzemeltetése során gondoskodni kell a szerverek karbantartásáról és az esetleges hibák gyors javításáról.
+Az internetkapcsolat stabilitása is kulcsfontosságú, hogy a felhasználók mindig hozzáférhessenek az alkalmazáshoz.
 
 ## Absztrakt domain modell
 
