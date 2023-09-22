@@ -81,7 +81,7 @@ A felhasználó kiválasztja a kvíz témáját és elkezdi annak megoldását. 
 
 ## Képernyő tervek
 
-Az első képernyőterv a kvíz elindítását megelőzően látható kép. Egy kvíz befejezését követően, szintén ide ide kerül vissza a felhasználó.
+Az első képernyőterv a kvíz elindítását megelőzően látható kép. Egy kvíz befejezését követően, szintén ide kerül vissza a felhasználó.
 
 ![terv1](Image/kepernyokep1.png)
 
