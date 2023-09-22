@@ -9,7 +9,27 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 ## Projektterv
 
 ## Üzleti folyamatok modellje
+### Üzleti szereplők
+**Felhasználó:** A *felhasználók*, akik a kvízeket megoldhatják.
+**Fejlesztő:** A *fejlesztők* feladata:
+- Probléma kezelés: Biztosítani a rendszer megfelelő, hibamentes működését.
+- További témák hozzáadása: Újabb témák, illetve az azokhoz tartozó kérdések halmazával bővíteni a rendszert.
+- Meglévő témák/kérdések megváltoztatása, javítása: Hibás kérdések/válaszok javítása.
+- Rendszerkarbantartás 
 
+### Üzleti folyamatok
+1. **A kvíz elindítása:** A felhasználó kiválasztja a kvíz témáját és megkezdi annak megoldását:
+    - Bemenet: Felhasználó kiválasztja a témát.
+    - Kimenet: Az választott témához kapcsolódó random kérdések és válaszlehetőségek.
+    - Szereplők: Felhasználó
+2. **A kvíz megoldása:** A felhasználó a kvíz megoldása során adott számú kérdésre válaszol. Egy kérdés megválaszolását követően a helyes válasz azonnal látható lesz:
+    - Bemenet: A felhasználó kiválasztja, az általa helyesnek ítélt választ. Ezt követően már nincs lehetőség módosítani a választást.
+    - Kimenet: A rendszer megmutatja a helyes választ. Jó válasz esetén megnöveli a pontszámot. A felhasználó átléphet a közvetkező kérdésre.
+    - Szereplők: Felhasználó
+3. **A kvíz kiértékelése:** A felhasználó, minden kérdés megválaszolását követően megnézheti a kvíz eredményét:
+    - Bemenet: A felhasználó az utolsó kérdésen továbblépve jut el a kvíz kiértékeléséhez. A felhasználó visszatérhet a kezdőképernyőre.
+    - Kimenet: A felhasználó láthatja, a helyesen megválaszolt kérdések számát, az elért pontszámot és az eltelt időt.
+    - Szereplők: Felhasználó       
 ## Követelmények
 
 1. ### Átláthatóság
@@ -75,6 +95,24 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
     Sose legyen kérdés olyan témából, ami nem lett kiválasztva.
 
 ## Funkcionális terv
+### Menühierarchia
+1. Az alkalmazás főképernyője egy szimpla, a kvíz elindítására szolgáló menü.
+2. A következő képernyő a kvíz témájának kiválasztására szolgál.
+3. A téma kiválasztásával, a rendszer megkeresi az adott témához tartozó adatokat, és véletlenszerűen kiválasztja a kérdéseket, az ahhoz tartozó válaszokkal együtt.
+4. Ha minden kiválasztott kérdésen végigment a rendszer, akkor befejeződik a kvíz megoldása és egy új képernyő jelenik meg, ahol a rendszer kiértékeli a kvíz megoldását és visszajelzést ad a felhasználónak.
+
+![menuhierarchia](Image/menuhierarchia.png)
+
+---
+
+### Rendszerhasználati esetek
+**Az adott témához tartozó kérdések kiválasztása:** A rendszer végigmegy a témához tartózó kérdéseken, azokból véletlenszerűen kiválaszt adott számú kérdést, ehhez többször végig iterál a kérdéseken és a már kiválasztott kérdéseket eltárolja, ezzel elkerülve egy kérdés többszöri előfordulását egy kvíz megoldásában.
+
+![temavalasztas](Image/kviz_temavalasztas.png)
+
+**Kvíz megoldás:** A kérdések kiválasztását követően megkezdődik a kvíz megoldása. Itt a rendszer megjeleníti a kérdéseket, illetve az azokhoz tartozó válaszokat. Számolja a helyes válaszokat és a pontszámot.
+
+![megoldas](Image/kviz_megoldas.png)
 
 ## Fizikai környezet
 
