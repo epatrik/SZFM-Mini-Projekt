@@ -165,7 +165,37 @@ Ez magában foglalja a biztonságos kapcsolatot (SSL), a hitelesítést, a jogos
 A fizikai környezet részeként fontos megjegyezni, hogy az alkalmazás üzemeltetése során gondoskodni kell a szerverek karbantartásáról és az esetleges hibák gyors javításáról.
 Az internetkapcsolat stabilitása is kulcsfontosságú, hogy a felhasználók mindig hozzáférhessenek az alkalmazáshoz.
 
-## Absztrakt domain modell
+## Absztrakt Domain Modell
+
+- Felhasználó (User):
+A felhasználók az alkalmazásban lévő interakciók szereplői.
+A felhasználók lehetnek diákok vagy tanárok. A tanárok adminisztrátori jogosultsággal rendelkeznek, ami lehetővé teszi kvízek létrehozását.
+
+- Kvíz (Quiz):
+A kvíz egy témához tartozó kérdésekből áll.
+A kvíz tartalmazza a kérdéseket és azokhoz kapcsolódó válaszlehetőségeket.
+
+- Kérdés (Question):
+A kvíz egy kérdésből és annak válaszlehetőségeiből áll.
+A kérdésekhez hozzárendelhető a helyes válasz is.
+
+- Téma (Topic):
+A témakörök csoportosítják a kvízeket.
+Minden kvíz egy témához tartozik.
+
+- Eredmény (Result):
+Az eredmények rögzítik a felhasználók által elért pontszámot és eredményeket egy-egy kvíz kitöltése után.
+
+- Felhasználói Interakciók (User Interactions):
+Az absztrakt domain modellben jelöljük, hogy a felhasználók kvízeket töltenek ki, kvízeket hoznak létre, válaszokat adnak kérdésekre és megtekintik az eredményeiket.
+
+- Adatbázis (Database):
+Az adatbázis tárolja az összes információt, például a kérdéseket, válaszokat és témaköröket.
+
+- Kapcsolatok (Relationships):
+Az absztrakt domain modellben mutatjuk be, hogy a felhasználók kapcsolódnak a kvízekhez, a kérdésekhez és az eredményekhez.
+A kvízek tartalmazzák a kérdéseket és hozzárendelik a témákat.
+Az eredmények az egyes felhasználók és kvízek közötti kapcsolatot jelentik.
 
 ## Architektúrális terv
 
