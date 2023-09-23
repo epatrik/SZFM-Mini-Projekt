@@ -43,6 +43,17 @@ function startQuiz() {
 function showQuestion(questionNumber){
     questionBlock.classList.remove('hide');
     question.innerText = questions[questionNumber].question;
+    questions[questionNumber].answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        button.disabled = false
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', answerSelected)
+        answers.appendChild(button)
+    })
 }
 
 function shuffleQuestions(questions){
@@ -58,6 +69,9 @@ function resetScreen() {
     backButton.classList.add('hide');
     questionBlock.classList.add('hide');
     topicBlock.classList.add('hide');
+    while (answers.firstChild) {
+        answers.removeChild(answers.firstChild)
+    }
 }
 
 function resetQuiz(){
