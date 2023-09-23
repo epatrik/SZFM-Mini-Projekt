@@ -40,7 +40,7 @@ function startQuiz() {
     backButton.classList.remove('hide');
 }
 
-function showQuestion(questionNumber){
+function showQuestion(){
     questionBlock.classList.remove('hide');
     question.innerText = questions[questionNumber].question;
     questions[questionNumber].answers.forEach(answer => {
@@ -60,9 +60,36 @@ function shuffleQuestions(questions){
     questions.sort(() => Math.random() - 0.5);
 }
 
-function answerSelected() {
-
+function answerSelected(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answers.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+  })
+  if (questions.length > questionNumber + 1) {
+    nextButton.classList.remove('hide')
+  } else {
+    startButton.innerText = 'Restart'
+    startButton.classList.remove('hide')
+    backButton.classList.add('hide')
+    nextButton.classList.add('hide')
+  }
 }
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+      element.classList.add('correct')
+    } else {
+      element.classList.add('wrong')
+    }
+  }
+  
+  function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+  }
 
 function resetScreen() {
     nextButton.classList.add('hide');
@@ -82,4 +109,6 @@ function resetQuiz(){
 
 function nextQuestion(){
     questionNumber += 1;
+    resetScreen();
+    showQuestion();
 }
