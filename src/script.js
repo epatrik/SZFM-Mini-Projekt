@@ -11,10 +11,10 @@ startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
 backButton.addEventListener('click', resetQuiz);
 
-topicButtons.forEach(function(button) {
-    button.addEventListener('click', function(event) {
+topicButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
         questionTopic = event.target.dataset.topic;
-        topicButtons.forEach(function(topicButton) {
+        topicButtons.forEach(function (topicButton) {
             topicButton.classList.remove('selected');
         })
         button.classList.add('selected');
@@ -32,15 +32,15 @@ function startQuiz() {
     resetScreen();
     questions = allQuestions.filter(function (question) {
         return question.topic === questionTopic;
-      });
+    });
     shuffleQuestions(questions);
     questionNumber = 0;
     startButton.classList.add('hide');
-    showQuestion(questionNumber);
+    showQuestion();
     backButton.classList.remove('hide');
 }
 
-function showQuestion(){
+function showQuestion() {
     questionBlock.classList.remove('hide');
     question.innerText = questions[questionNumber].question;
     questions[questionNumber].answers.forEach(answer => {
@@ -56,7 +56,7 @@ function showQuestion(){
     })
 }
 
-function shuffleQuestions(questions){
+function shuffleQuestions(questions) {
     questions.sort(() => Math.random() - 0.5);
 }
 
@@ -78,16 +78,16 @@ function answerSelected(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
-      element.classList.add('correct')
+        element.classList.add('correct')
     } else {
-      element.classList.add('wrong')
+        element.classList.add('wrong')
     }
-  }
-  
-  function clearStatusClass(element) {
+}
+
+function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
-  }
+}
 
 function resetScreen() {
     nextButton.classList.add('hide');
@@ -100,13 +100,13 @@ function resetScreen() {
     }
 }
 
-function resetQuiz(){
+function resetQuiz() {
     resetScreen();
     startButton.classList.remove('hide');
     topicBlock.classList.remove('hide');
 }
 
-function nextQuestion(){
+function nextQuestion() {
     questionNumber += 1;
     resetScreen();
     backButton.classList.remove('hide')
