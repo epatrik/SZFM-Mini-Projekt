@@ -7,36 +7,36 @@
     { "text": "8", "correct": false },
     { "text": "16", "correct": false },
     { "text": "22", "correct": false }
-  ]
-},
-{
-  "topic":"math",
-  "question": "What is 3 + 2",
-  "answers": [
-    { "text": "5", "correct": true },
-    { "text": "4", "correct": false },
-    { "text": "3", "correct": false },
-    { "text": "2", "correct": false }
-  ]
-},
-{
-  "topic":"math",
-  "question": "4 * 6",
-  "answers": [
-    { "text": "No", "correct": false },
-    { "text": "0", "correct": false },
-    { "text": "34", "correct": false },
-    { "text": "24", "correct": true }
-  ]
-},
-{
-  "topic":"math",
-  "question": "What is 4 * 2?",
-  "answers": [
-    { "text": "6", "correct": false },
-    { "text": "5", "correct": false },
-    { "text": "3", "correct": false },
-    { "text": "8", "correct": true }
-  ]
-}
+    ]
+  },
+  {
+    "topic":"math",
+    "question": "What is 3 + 2",
+    "answers": [
+      { "text": "5", "correct": true },
+      { "text": "4", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "2", "correct": false }
+    ]
+  },
+  {
+    "topic":"math",
+    "question": "4 * 6",
+    "answers": [
+      { "text": "No", "correct": false },
+      { "text": "0", "correct": false },
+      { "text": "34", "correct": false },
+      { "text": "24", "correct": true }
+    ]
+  },
+  {
+    "topic":"math",
+    "question": "What is 4 * 2?",
+    "answers": [
+      { "text": "6", "correct": false },
+      { "text": "5", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "8", "correct": true }
+    ]
+  }
 ]
