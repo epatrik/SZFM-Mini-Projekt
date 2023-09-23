@@ -4,3 +4,127 @@
 .selected {
     color: blue;
 }
+
+body {
+    background-image: radial-gradient(circle, rgb(112, 203, 255), rgb(92, 195, 255), rgb(68, 186, 255));
+}
+
+#question-block {
+    position: absolute;
+    background-color: white;
+    top: 15%;
+    left: 30%;
+    width: 40%;
+    height: 70%;
+    border-radius: 15pt;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 10px 20px 0 rgba(0, 0, 0, 0.34);
+}
+
+#start {
+    position: absolute;
+    text-align: center;
+    top: 48%;
+    left: 47%;
+    font-size: 20pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 30px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: solid 1px black;
+}
+
+#start:hover {
+    background-image: radial-gradient(circle, rgb(50, 180, 255), rgb(25, 171, 255), rgb(0, 162, 255));
+    color: white;
+    text-wrap: black;
+    outline: solid 1px rgb(0, 52, 110);
+    transition: all 0.3s ease;
+}
+
+#topic-block button {
+    position: absolute;
+    padding: 70px 50px;
+    width: 10%;
+    top: 20%;
+
+    font-size: 25pt;
+    outline: none;
+    border: none;
+}
+
+[data-topic="math"] {
+    left: 26%;
+}
+[data-topic="geography"] {
+    left: 38.5%;
+}
+[data-topic="history"] {
+    left: 51%;
+}
+[data-topic="physics"] {
+    left: 63.5%;
+}
+
+#back {
+    position: absolute;
+    top: 79%;
+    left: 31%;
+    height: 4%;
+    font-size: 15pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 30px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: solid 1px black;
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(245, 245, 245), rgb(235, 235, 235));
+}
+
+#back:hover {
+    background-image: radial-gradient(circle, rgb(220, 220, 220), rgb(200, 200, 200), rgb(190, 190, 190));
+    color: black;
+    text-wrap: black;
+    outline: solid 1px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+#question {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    font-size: 25pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#answers button {
+    position: absolute;
+    padding: 20px 90px;
+}
+
+#answer1 {
+    top: 40%;
+    left: 30%;
+}
+
+#answer2 {
+    top: 40%;
+    left: 50%;
+}
+
+#answer3 {
+    top: 50%;
+    left: 30%;
+}
+
+#answer4 {
+    top: 50%;
+    left: 50%;
+}
