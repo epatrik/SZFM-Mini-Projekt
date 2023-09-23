@@ -11,6 +11,9 @@ backButton.addEventListener('click', resetQuiz);
 
 let questionNumber = 0;
 
+import questions from './questions.json' assert { type: 'json' };
+console.log(questions);
+
 function startQuiz() {
     resetScreen();
     shuffleQuestions(questions);
