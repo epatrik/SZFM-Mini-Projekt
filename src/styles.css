@@ -1,6 +1,7 @@
 .hide {
     display: none;
 }
+
 .selected {
     color: blue;
 }
@@ -18,8 +19,8 @@ body {
     height: 70%;
     border-radius: 15pt;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 10px 20px 0 rgba(0, 0, 0, 0.34);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2),
+        0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
 
 #start {
@@ -60,12 +61,15 @@ body {
 [data-topic="math"] {
     left: 26%;
 }
+
 [data-topic="geography"] {
     left: 38.5%;
 }
+
 [data-topic="history"] {
     left: 51%;
 }
+
 [data-topic="physics"] {
     left: 63.5%;
 }

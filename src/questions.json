@@ -1,6 +1,6 @@
 [
   {
-    "topic":"math",
+    "topic":"meth",
     "question": "What is 2 + 2?",
     "answer": [
       { "text": "4", "correct": true },
