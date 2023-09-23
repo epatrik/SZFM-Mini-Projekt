@@ -70,9 +70,7 @@ function answerSelected(e) {
   if (questions.length > questionNumber + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart'
-    startButton.classList.remove('hide')
-    backButton.classList.add('hide')
+    backButton.innerText = 'Újrakezdés'
     nextButton.classList.add('hide')
   }
 }
@@ -93,6 +91,7 @@ function setStatusClass(element, correct) {
 
 function resetScreen() {
     nextButton.classList.add('hide');
+    backButton.innerText = 'Vissza';
     backButton.classList.add('hide');
     questionBlock.classList.add('hide');
     topicBlock.classList.add('hide');
@@ -110,5 +109,6 @@ function resetQuiz(){
 function nextQuestion(){
     questionNumber += 1;
     resetScreen();
+    backButton.classList.remove('hide')
     showQuestion();
 }
