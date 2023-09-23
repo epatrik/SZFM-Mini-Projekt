@@ -1,7 +1,6 @@
 .hide {
     display: none;
 }
-
 .selected {
     color: blue;
 }
@@ -14,13 +13,13 @@ body {
     position: absolute;
     background-color: white;
     top: 15%;
-    left: 30%;
-    width: 40%;
-    height: 70%;
+    left: 29.5%;
+    width: 80vh;
+    height: 70vh;
     border-radius: 15pt;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2),
-        0 10px 20px 0 rgba(0, 0, 0, 0.34);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
 
 #start {
@@ -28,7 +27,7 @@ body {
     text-align: center;
     top: 48%;
     left: 47%;
-    font-size: 20pt;
+    font-size: 2vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 15px 30px;
     background-color: white;
@@ -40,36 +39,50 @@ body {
 }
 
 #start:hover {
-    background-image: radial-gradient(circle, rgb(50, 180, 255), rgb(25, 171, 255), rgb(0, 162, 255));
-    color: white;
+    /*background-image: radial-gradient(circle, rgb(50, 180, 255), rgb(25, 171, 255), rgb(0, 162, 255));*/
+    background-color: white;
+    color: black;
     text-wrap: black;
     outline: solid 1px rgb(0, 52, 110);
     transition: all 0.3s ease;
 }
 
+#start:disabled {
+    background-color: white;
+    color: darkgrey;
+}
+
+#topic-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3vh;
+}
+
 #topic-block button {
-    position: absolute;
     padding: 70px 50px;
-    width: 10%;
+    width: 25vh;
     top: 20%;
 
-    font-size: 25pt;
+    font-size: 3vh;
     outline: none;
     border: none;
+    justify-content: center;
+}
+
+.topic {
+    text-align: center;
 }
 
 [data-topic="math"] {
     left: 26%;
 }
-
 [data-topic="geography"] {
     left: 38.5%;
 }
-
 [data-topic="history"] {
     left: 51%;
 }
-
 [data-topic="physics"] {
     left: 63.5%;
 }
@@ -100,9 +113,8 @@ body {
 }
 
 #question {
-    position: absolute;
-    top: 10%;
-    left: 13%;
+    text-align: center;
+    padding-top: 6vh;
     font-size: 25pt;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -131,4 +143,11 @@ body {
 #answer4 {
     top: 50%;
     left: 50%;
+}
+
+.btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 20px 200px;
 }
