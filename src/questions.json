@@ -38,5 +38,33 @@
       { "text": "3", "correct": false },
       { "text": "8", "correct": true }
     ]
+  },
+  {
+    "topic":"history",
+    "question": "mikor találták fel amerikát?",
+    "answers": [
+      { "text": "6", "correct": false },
+      { "text": "5", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "8", "correct": true }
+    ]
+  },{
+    "topic":"geography",
+    "question": "milyen messze van debrecen és budapest?",
+    "answers": [
+      { "text": "6", "correct": false },
+      { "text": "5", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "8", "correct": true }
+    ]
+  },{
+    "topic":"physics",
+    "question": "hány atom van a vasban?",
+    "answers": [
+      { "text": "6", "correct": false },
+      { "text": "5", "correct": false },
+      { "text": "3", "correct": false },
+      { "text": "8", "correct": true }
+    ]
   }
 ]
