@@ -113,6 +113,7 @@ function resetScreen() {
     questionBlock.classList.add('hide');
     answers.classList.remove('hide')
     topicBlock.classList.add('hide');
+    clearStatusClass(document.body);
     while (answers.firstChild) {
         answers.removeChild(answers.firstChild)
     }

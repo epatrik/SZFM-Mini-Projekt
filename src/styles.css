@@ -1,6 +1,5 @@
 .hide {
     display: none;
-    transition: all 0.3s ease;
 }
 
 .no-click {
@@ -12,7 +11,18 @@
 }
 
 body {
-    background-image: radial-gradient(circle, rgb(112, 203, 255), rgb(92, 195, 255), rgb(68, 186, 255));
+    background-color: rgb(67, 186, 255);
+    transition: all 0.2s ease;
+}
+
+body.correct {
+    background-color: rgb(139, 255, 128);
+    transition: all 0.3s ease;
+}
+
+body.wrong {
+    background-color: rgb(255, 110, 110);
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -24,7 +34,7 @@ body {
     left: 30%;
     transition: all 0.3s ease;
     border-radius: 15px;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 
                 0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
 
@@ -66,11 +76,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
     outline: solid 1px black;
+    transition: all 0.3s ease;
 }
 
 #start:disabled {
     background-color: white;
     color: darkgrey;
+    cursor: auto;
 }
 
 #start:hover:enabled {
@@ -220,14 +232,15 @@ table {
     height: 5vh;
     width: 30vh;
     font-size: 2vh;
+    cursor: pointer;
 }
 
-.correct {
+.btn.correct {
     background-color: rgb(159, 255, 159);
     transition: all 0.6s ease-in;
 }
 
-.wrong {
+.btn.wrong {
     background-color: rgb(255, 167, 167);
     transition: all 0.2s ease-in;
 }
