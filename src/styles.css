@@ -14,7 +14,22 @@ body {
     background-image: radial-gradient(circle, rgb(112, 203, 255), rgb(92, 195, 255), rgb(68, 186, 255));
 }
 
+.container {
+    position: absolute;
+    background-color: white;
+    width: 75vh;
+    height: 70%;
+    top: 15%;
+    left: 30%;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 10px 20px 0 rgba(0, 0, 0, 0.34);
+}
+
 #question-block {
+
+    /*
     position: absolute;
     background-color: white;
     top: 15%;
@@ -25,16 +40,25 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 10px 20px 0 rgba(0, 0, 0, 0.34);
+    */
 }
-
+/*
+.footer {
+    position: absolute;
+    top: 50%;
+    width: 75vh;
+    height: 10vh;
+    left: -0.4%;
+}
+*/
 #start {
     position: absolute;
     text-align: center;
-    top: 48%;
-    left: 47%;
+    top: 84%;
+    left: 42.25%;
     font-size: 2vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 15px 30px;
+    padding: 1vh 2vh;
     background-color: white;
     outline: none;
     border: none;
@@ -43,36 +67,76 @@ body {
     outline: solid 1px black;
 }
 
-#start:hover {
-    /*background-image: radial-gradient(circle, rgb(50, 180, 255), rgb(25, 171, 255), rgb(0, 162, 255));*/
-    background-color: white;
-    color: black;
-    text-wrap: black;
-    outline: solid 1px rgb(0, 52, 110);
-    transition: all 0.3s ease;
-}
-
 #start:disabled {
     background-color: white;
     color: darkgrey;
 }
 
-#topic-block {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 3vh;
+#start:hover:enabled {
+    background-image: radial-gradient(circle, rgb(50, 180, 255), rgb(25, 171, 255), rgb(0, 162, 255));
+    color: rgb(255, 255, 255);
+    text-wrap: black;
+    outline: solid 1px rgb(0, 52, 110);
+    transition: all 0.3s ease;
 }
 
-#topic-block button {
-    padding: 70px 50px;
-    width: 25vh;
-    top: 20%;
+table, tr, td {
+    border: solid 1px black;
+}
 
+td {
+    text-align: center;
+}
+
+tr, td {
+    width: 73vh;
+}
+
+table {
+    position: relative;
+    top: 22vh;
+    left: 1vh;
+    width: 73vh;
+    height: 30vh;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+#topic-title {
+    position: absolute;
+    top: 2vh;
+    left: 1.07vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4.5vh;
+    border-bottom: solid 10px grey;
+    padding-top: 5vh;
+    padding-bottom: 8vh;
+    padding-left: 19.75vh;
+    padding-right: 19.75vh;
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 5px 0 rgba(0, 0, 0, 0.34);
+}
+
+/*
+#topic-block {
+    
+}
+*/
+#topic-block button {
+    width: 100%;
+    padding-top: 1.6vh;
+    padding-bottom: 1.6vh;
     font-size: 3vh;
     outline: none;
     border: none;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));
+}
+
+
+
+#topic-block button:hover {
+    background-image: radial-gradient(circle, rgb(210, 210, 210), rgb(200, 200, 200), rgb(190, 190, 190));
 }
 
 .topic {
