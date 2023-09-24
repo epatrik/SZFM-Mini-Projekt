@@ -39,8 +39,8 @@ body.wrong {
     transform: translate(-50%, -40%);
     transition: all 0.3s ease;
     border-radius: 15px;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2), 
-                0 14px 30px 0 rgba(0, 0, 0, 0.34);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 
+                0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
 
 .footer {
