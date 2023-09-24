@@ -12,8 +12,9 @@
 
 body {
     background-color: rgb(67, 186, 255);
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
+
 
 body.correct {
     background-color: rgb(139, 255, 128);
@@ -32,8 +33,9 @@ body.wrong {
     height: 70%;
     top: 15%;
     left: 30%;
-    transition: all 0.3s ease;
-    border-radius: 15px;
+    /*transition: all 0.3s ease;*/
+    border-radius: 8px;
+
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 
                 0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
@@ -41,9 +43,9 @@ body.wrong {
 .footer {
     position: absolute;
     top: 53vh;
-    width: 97%;
-    left: 1vh;
-    border-top: solid 10px grey;
+    width: 100%;
+    left: 0;
+    border-top: solid 2px grey;
 }
 
 #question-block {
@@ -76,7 +78,7 @@ body.wrong {
     top: 5.5vh;
     left: 42.25%;
     font-size: 2vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dosis', sans-serif;
     padding: 1vh 2vh;
     background-color: white;
     outline: none;
@@ -106,7 +108,6 @@ body.wrong {
 }
 
 table, tr, td {
-    border: solid 1px black;
     transition: all 0.3s ease;
 }
 
@@ -114,6 +115,8 @@ td {
     text-align: center;
     width: 0vh;
     height: 0vh;
+    border-radius: 8px;
+    border: solid 1px grey;
 }
 
 tr, td {
@@ -126,24 +129,27 @@ table {
     left: 1vh;
     width: 73vh;
     height: 30vh;
-    border: solid 2px rgb(0, 0, 0);
+}
+
+#topic-block {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
 }
 
 #topic-title {
     position: absolute;
-    top: 2vh;
-    left: 1.07vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 3vh;
+    left: 0;
     font-size: 4.5vh;
     font-weight: bold;
-    border-bottom: solid 10px grey;
+    border-bottom: solid 2px grey;
     padding-top: 5vh;
-    padding-bottom: 8vh;
+    padding-bottom: 7vh;/*
     padding-left: 17.75vh;
-    padding-right: 17.75vh;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 5px 0 rgba(0, 0, 0, 0.34);
+    padding-right: 17.75vh;*/
+    width: 100%;
+    /*transition: all 0.3s ease;*/
+
 }
 
 #topic-block button {
@@ -151,11 +157,12 @@ table {
     height: 100%;
     font-size: 3vh;
     outline: none;
-    border: none;
+    border: solid 1px rgb(53, 53, 53);
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dosis', sans-serif;
     /*background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));*/
     background-color: rgb(238, 238, 238);
+    border-radius: 8px;
 }
 
 
@@ -176,7 +183,7 @@ table {
     top: 5.5vh;
     left: 5%;
     font-size: 2vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dosis', sans-serif;
     padding: 1vh 2vh;
     background-color: white;
     border: solid 1px grey;
@@ -198,7 +205,7 @@ table {
     top: 5.5vh;
     left: 75%;
     font-size: 2vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dosis', sans-serif;
     padding: 1vh 2vh;
     background-color: white;
     border: solid 1px grey;
@@ -211,7 +218,8 @@ table {
     text-align: center;
     padding-top: 6vh;
     font-size: 4vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
 
 }
 
@@ -233,6 +241,8 @@ table {
     font-size: 2vh;
     cursor: pointer;
     border-radius: 15px;
+    border: solid 1px rgb(92, 92, 92);
+    font-family: 'Dosis', sans-serif;
 }
 
 .btn:hover {
