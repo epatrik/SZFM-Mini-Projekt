@@ -6,7 +6,9 @@
       { "text": "89", "correct": false },
       { "text": "111", "correct": true },
       { "text": "107", "correct": false },
-      { "text": "97", "correct": false }
+      { "text": "97", "correct": false },
+      { "text": "90", "correct": false },
+      { "text": "113", "correct": false }
     ]
   },{
     "topic":"math",
@@ -131,6 +133,19 @@
       { "text": "Németország", "correct": false },
       { "text": "Svájc", "correct": true },
       { "text": "Olaszország", "correct": false }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Kína melyik országgal NEM határos?",
+    "answers": [
+      { "text": "Banglades", "correct": true },
+      { "text": "Adganisztán", "correct": false },
+      { "text": "Mongólia", "correct": true },
+      { "text": "Nepál", "correct": false },
+      { "text": "Vietnám", "correct": false },
+      { "text": "Oroszország", "correct": false },
+      { "text": "India", "correct": false },
+      { "text": "Pakisztán", "correct": false }
     ]
   },{
     "topic":"history",
