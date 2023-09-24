@@ -35,7 +35,7 @@ function startQuiz() {
     questions = allQuestions.filter(function (question) {
         return question.topic === questionTopic;
     });
-    shuffleQuestions(questions);
+    shuffle(questions);
     questionNumber = 0;
     score = 0;
     startButton.classList.add('hide');
@@ -46,7 +46,9 @@ function startQuiz() {
 function showQuestion() {
     questionBlock.classList.remove('hide');
     question.innerText = questions[questionNumber].question;
-    questions[questionNumber].answers.forEach(answer => {
+    var answerlist = questions[questionNumber].answers;
+    shuffle(answerlist)
+    answerlist.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('btn')
@@ -59,8 +61,8 @@ function showQuestion() {
     })
 }
 
-function shuffleQuestions(questions) {
-    questions.sort(() => Math.random() - 0.5);
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
 }
 
 function answerSelected(e) {
