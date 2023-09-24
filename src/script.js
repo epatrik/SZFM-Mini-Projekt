@@ -110,7 +110,7 @@ function showEndScreen() {
 
 function resetScreen() {
     nextButton.classList.add('hide');
-    backButton.innerText = 'Vissza';
+    backButton.innerText = 'Kilépés';
     backButton.classList.add('hide');
     questionBlock.classList.add('hide');
     answers.classList.remove('hide')
