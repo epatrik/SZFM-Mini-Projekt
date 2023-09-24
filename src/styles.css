@@ -10,6 +10,7 @@
     color: rgb(4, 110, 231);
     font-weight: 600;
     border: solid 2px rgb(0, 89, 255);
+    background-image: radial-gradient(circle, blue, red, green);
 }
 
 body {
@@ -116,15 +117,24 @@ table {
     text-align: center;
 }
 
+#skrumblak {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    margin-top: 2vh;
+    text-shadow: 2px 2px 5px black;
+}
+
 #topic-title {
     position: absolute;
     top: 3vh;
     left: 0;
-    font-size: 4.5vh;
+    font-size: 5vh;
     font-weight: bold;
     border-bottom: solid 2px rgb(70, 70, 70);
     padding-top: 5vh;
-    padding-bottom: 7vh;/*
+    padding-bottom: 6.5vh;/*
     padding-left: 17.75vh;
     padding-right: 17.75vh;*/
     width: 100%;
@@ -143,10 +153,6 @@ table {
     /*background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));*/
     background-color: rgb(238, 238, 238);
     border-radius: 8px;
-}
-
-.selected {
-    background-color: blue;
 }
 
 #topic-block button:hover {
