@@ -1,6 +1,5 @@
 .hide {
     display: none;
-    transition: all 0.3s ease;
 }
 
 .no-click {
@@ -8,11 +7,22 @@
 }
 
 .selected {
-    color: blue;
+    color: rgb(4, 110, 231);
 }
 
 body {
-    background-image: radial-gradient(circle, rgb(112, 203, 255), rgb(92, 195, 255), rgb(68, 186, 255));
+    background-color: rgb(67, 186, 255);
+    transition: all 0.2s ease;
+}
+
+body.correct {
+    background-color: rgb(139, 255, 128);
+    transition: all 0.3s ease;
+}
+
+body.wrong {
+    background-color: rgb(255, 110, 110);
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -24,8 +34,16 @@ body {
     left: 30%;
     transition: all 0.3s ease;
     border-radius: 15px;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 
                 0 10px 20px 0 rgba(0, 0, 0, 0.34);
+}
+
+.footer {
+    position: absolute;
+    top: 53vh;
+    width: 97%;
+    left: 1vh;
+    border-top: solid 10px grey;
 }
 
 #question-block {
@@ -55,7 +73,7 @@ body {
 #start {
     position: absolute;
     text-align: center;
-    top: 84%;
+    top: 5.5vh;
     left: 42.25%;
     font-size: 2vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -66,11 +84,13 @@ body {
     border-radius: 5px;
     cursor: pointer;
     outline: solid 1px black;
+    transition: all 0.3s ease;
 }
 
 #start:disabled {
     background-color: white;
     color: darkgrey;
+    cursor: auto;
 }
 
 #start:hover:enabled {
@@ -81,8 +101,13 @@ body {
     transition: all 0.3s ease;
 }
 
+#topic-block {
+    transition: all 0.3s ease;
+}
+
 table, tr, td {
     border: solid 1px black;
+    transition: all 0.3s ease;
 }
 
 td {
@@ -110,60 +135,45 @@ table {
     left: 1.07vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4.5vh;
+    font-weight: bold;
     border-bottom: solid 10px grey;
     padding-top: 5vh;
     padding-bottom: 8vh;
-    padding-left: 19.75vh;
-    padding-right: 19.75vh;
+    padding-left: 17.75vh;
+    padding-right: 17.75vh;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 5px 0 rgba(0, 0, 0, 0.34);
 }
 
-/*
-#topic-block {
-    
-}
-*/
 #topic-block button {
     width: 100%;
-    padding-top: 1.6vh;
-    padding-bottom: 1.6vh;
+    height: 100%;
     font-size: 3vh;
     outline: none;
     border: none;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));
+    /*background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));*/
+    background-color: rgb(238, 238, 238);
 }
 
 
 
 #topic-block button:hover {
-    background-image: radial-gradient(circle, rgb(210, 210, 210), rgb(200, 200, 200), rgb(190, 190, 190));
+    background-color: rgb(166, 207, 241);
+    transition: all 0.3s ease;
 }
 
 .topic {
     text-align: center;
 }
 
-[data-topic="math"] {
-    left: 26%;
-}
-[data-topic="geography"] {
-    left: 38.5%;
-}
-[data-topic="history"] {
-    left: 51%;
-}
-[data-topic="physics"] {
-    left: 63.5%;
-}
-
 #back {
     justify-content: center;
     text-align: center;
     position: absolute;
-    top: 84%;
+    top: 5.5vh;
     left: 5%;
     font-size: 2vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -185,7 +195,7 @@ table {
     justify-content: center;
     text-align: center;
     position: absolute;
-    top: 84%;
+    top: 5.5vh;
     left: 75%;
     font-size: 2vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -210,9 +220,10 @@ table {
     grid-template-columns: repeat(2, auto);
     gap: 5vh;
     row-gap: 2vh;
+    column-gap: 3vh;
     width: 50%;
     position: absolute;
-    margin-left: 5vh;
+    margin-left: 6vh;
     top: 30vh;
 }
 
@@ -220,14 +231,24 @@ table {
     height: 5vh;
     width: 30vh;
     font-size: 2vh;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
-.correct {
+.btn:hover {
+    background-color: rgb(172, 210, 233);
+    transition: all 0.2s ease;
+    border: solid 1px rgb(0, 61, 153);
+}
+
+.btn.correct {
     background-color: rgb(159, 255, 159);
+    border: solid 1px rgb(6, 160, 6);
     transition: all 0.6s ease-in;
 }
 
-.wrong {
+.btn.wrong {
     background-color: rgb(255, 167, 167);
+    border: solid 1px rgb(165, 5, 5);
     transition: all 0.2s ease-in;
 }
