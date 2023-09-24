@@ -51,30 +51,6 @@ body.wrong {
     border-top: solid 2px rgb(70, 70, 70);
 }
 
-#question-block {
-
-    /*
-    position: absolute;
-    background-color: white;
-    top: 15%;
-    left: 29.5%;
-    width: 80vh;
-    height: 70vh;
-    border-radius: 15pt;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 10px 20px 0 rgba(0, 0, 0, 0.34);
-    */
-}
-/*
-.footer {
-    position: absolute;
-    top: 50%;
-    width: 75vh;
-    height: 10vh;
-    left: -0.4%;
-}
-*/
 #start {
     position: absolute;
     text-align: center;
