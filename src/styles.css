@@ -7,10 +7,10 @@
 }
 
 .selected {
-    color: rgb(4, 110, 231);
+    color: rgb(240, 243, 250);
     font-weight: 600;
     border: solid 2px rgb(0, 89, 255);
-    background-image: radial-gradient(circle, blue, red, green);
+    background-image: radial-gradient(circle, rgb(121, 147, 182), rgb(112, 136, 168), rgb(93, 118, 151));
 }
 
 body {
