@@ -68,16 +68,17 @@ function answerSelected(e) {
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answers.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
-    button.classList.add('no-click')
-    nextButton.classList.remove('hide')
-  })
-  if (correct) {
-    score++
-  }
-  if (questions.length <= questionNumber + 1) {
-    endOfQuiz = true
-  }
+        setStatusClass(button, button.dataset.correct)
+        button.classList.add('no-click')
+        nextButton.classList.remove('hide')
+    })
+    if (correct) {
+        score++
+    }
+    if (questions.length <= questionNumber + 1) {
+        backButton.classList.add('hide');
+        endOfQuiz = true;
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -99,7 +100,7 @@ function showEndScreen() {
     questionBlock.classList.remove('hide')
     answers.classList.add('hide')
     question.innerText = '\n\n\nElért eredmény: \n' + score + '/' + questions.length
-    backButton.innerText = 'Újrakezdés'
+    backButton.innerText = 'Bezár'
     backButton.classList.remove('hide')
 }
 

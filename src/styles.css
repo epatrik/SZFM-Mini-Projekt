@@ -23,8 +23,8 @@ body {
     left: 30%;
     transition: all 0.3s ease;
     border-radius: 15px;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 10px 20px 0 rgba(0, 0, 0, 0.34);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2),
+        0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
 
 #question-block {
@@ -42,6 +42,7 @@ body {
                 0 10px 20px 0 rgba(0, 0, 0, 0.34);
     */
 }
+
 /*
 .footer {
     position: absolute;
@@ -80,7 +81,9 @@ body {
     transition: all 0.3s ease;
 }
 
-table, tr, td {
+table,
+tr,
+td {
     border: solid 1px black;
 }
 
@@ -88,7 +91,8 @@ td {
     text-align: center;
 }
 
-tr, td {
+tr,
+td {
     width: 73vh;
 }
 
@@ -112,8 +116,8 @@ table {
     padding-bottom: 8vh;
     padding-left: 19.75vh;
     padding-right: 19.75vh;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 5px 0 rgba(0, 0, 0, 0.34);
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2),
+        0 6px 5px 0 rgba(0, 0, 0, 0.34);
 }
 
 /*
@@ -146,12 +150,15 @@ table {
 [data-topic="math"] {
     left: 26%;
 }
+
 [data-topic="geography"] {
     left: 38.5%;
 }
+
 [data-topic="history"] {
     left: 51%;
 }
+
 [data-topic="physics"] {
     left: 63.5%;
 }
