@@ -66,6 +66,7 @@ function answerSelected(e) {
     setStatusClass(document.body, correct)
     Array.from(answers.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
+    button.classList.add('no-click')
   })
   if (questions.length > questionNumber + 1) {
     nextButton.classList.remove('hide')

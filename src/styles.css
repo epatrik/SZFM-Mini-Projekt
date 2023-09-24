@@ -1,6 +1,11 @@
 .hide {
     display: none;
 }
+
+.no-click {
+    pointer-events: none;
+}
+
 .selected {
     color: blue;
 }
