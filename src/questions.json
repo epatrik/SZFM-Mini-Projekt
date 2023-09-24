@@ -139,7 +139,7 @@
     "question": "Kína melyik országgal NEM határos?",
     "answers": [
       { "text": "Banglades", "correct": true },
-      { "text": "Adganisztán", "correct": false },
+      { "text": "Afganisztán", "correct": false },
       { "text": "Mongólia", "correct": true },
       { "text": "Nepál", "correct": false },
       { "text": "Vietnám", "correct": false },
