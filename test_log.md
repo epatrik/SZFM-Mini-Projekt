@@ -33,3 +33,13 @@
 | T28 | 2023.09.24 | Vadon Dániel | Bezárás gomb megjelenik-e az eredménykor | Bezárás gomb megjelenik az eredménykor | Bezárás gomb megjelent az eredménykor | Átment |
 | T29 | 2023.09.24 | Vadon Dániel | Bezárás gomb bezárja-e az eredményt | Bezárás gomb bezárja az eredményt | Bezárás gomb bezárta az eredményt | Átment |
 | T30 | 2023.09.24 | Vadon Dániel | Bezárás gomb eltűnik-e | Használat után eltűnik a Bezárás gomb | Használat után eltűnt a Bezárás gomb | Átment |
+| T31 | 2023.09.24 | Csepreghy Tamás | Háttérszín változás jó válasz esetén zöld színre | Zöldre változik a háttérszín jó válasz esetén | Zöldre változott a háttérszín jó válasz esetén | Átment |
+| T32 | 2023.09.24 | Csepreghy Tamás | Háttérszín változás rossz válasz esetén piros színre | Pirosra változik a háttérszín rossz válasz esetén | Pirosra változott a háttérszín rossz válasz esetén | Átment |
+| T33 | 2023.09.24 | Csepreghy Tamás | Kiválasztott téma gomb háttér- és betűszín megváltozása | Megváltozik a kiválasztott téma háttér- és betűszíne | Megváltozott a kiválasztott téma háttér- és betűszíne | Átment |
+| T34 | 2023.09.24 | Csepreghy Tamás | Kezdés gomb háttér- és betűszínének megváltozása amikor rajta van a kurzor, ha nincs téma kiválasztva | Nem változik meg a kezdés gomb hátter- és betűszíne, ha nincs kiválasztva téma | Nem változott meg a kezdés gomb háttér- és betűszíne | Átment |
+| T35 | 2023.09.24 | Csepreghy Tamás | Válaszlehetőségek keret- és háttérszín megváltozása, ha a kurzor rajta van | Megváltozik a keret- és háttérszín | Megváltozott a keret- és háttérszín | Átment |
+| T36 | 2023.09.24 | Csepreghy Tamás | Vissza gomb háttérszín megváltozása, ha a kurzor rajta van | Megváltozik a háttérszín | Megváltozott a háttérszín | Átment |
+| T37 | 2023.09.24 | Csepreghy Tamás | Következő gomb háttérszín megváltozása, ha a kurzor rajta van | Megváltozik a háttérszín | Megváltozott a háttérszín | Átment |
+| T38 | 2023.09.24 | Csepreghy Tamás | A gombok szövegei nem-e lógnak ki a keretükből méretváltozás esetén | Nem lógnak ki a szövegek | Nem lógtak ki a szövegek | Átment
+| T39 | 2023.09.24 | Csepreghy Tamás | Betűtípus beimportálása és felhasználása css-ben | A beimportált betűtípus használható és működik | A beimportált betűtípus működött | Átment |
+| T40 | 2023.09.24 | Csepreghy Tamás | Az ablak átméretezése esetén a kvíz alkalmazkodik az új felbontáshoz | Alkalmazkodik az új felbontáshoz | Alkalmazkodott az új felbontáshoz | Átment | 
