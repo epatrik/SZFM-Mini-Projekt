@@ -6,18 +6,18 @@
       { "text": "89", "correct": false },
       { "text": "111", "correct": true },
       { "text": "107", "correct": false },
-      { "text": "97", "correct": false },
-      { "text": "90", "correct": false },
-      { "text": "113", "correct": false }
+      { "text": "97", "correct": false }
     ]
   },{
     "topic":"math",
-    "question": "Mennyi 53/4?",
+    "question": "Mennyi 52/4?",
     "answers": [
       { "text": "13", "correct": true },
+      { "text": "10", "correct": false },
       { "text": "11", "correct": false },
       { "text": "12", "correct": false },
-      { "text": "14", "correct": false }
+      { "text": "14", "correct": false },
+      { "text": "15", "correct": false }
     ]
   },{
     "topic":"math",
