@@ -1,70 +1,253 @@
 [
   {
-    "topic":"meth",
-    "question": "What is 2 + 2?",
-    "answer": [
-      { "text": "4", "correct": true },
-      { "text": "8", "correct": false },
-      { "text": "16", "correct": false },
-      { "text": "22", "correct": false }
-    ]
-  },
-  {
     "topic":"math",
-    "question": "What is 3 + 2",
+    "question": "Melyik NEM prím szám?",
     "answers": [
-      { "text": "5", "correct": true },
-      { "text": "4", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "2", "correct": false }
+      { "text": "89", "correct": false },
+      { "text": "111", "correct": true },
+      { "text": "107", "correct": false },
+      { "text": "97", "correct": false }
     ]
-  },
-  {
+  },{
     "topic":"math",
-    "question": "4 * 6",
+    "question": "Mennyi 53/4?",
     "answers": [
-      { "text": "No", "correct": false },
-      { "text": "0", "correct": false },
-      { "text": "34", "correct": false },
-      { "text": "24", "correct": true }
+      { "text": "13", "correct": true },
+      { "text": "11", "correct": false },
+      { "text": "12", "correct": false },
+      { "text": "14", "correct": false }
     ]
-  },
-  {
+  },{
     "topic":"math",
-    "question": "What is 4 * 2?",
+    "question": "Mi a Pi, racionális vagy irracionális szám?",
     "answers": [
-      { "text": "6", "correct": false },
-      { "text": "5", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "8", "correct": true }
+      { "text": "Irracionális", "correct": true },
+      { "text": "Racionális", "correct": false }
     ]
-  },
-  {
-    "topic":"history",
-    "question": "mikor találták fel amerikát?",
+  },{
+    "topic":"math",
+    "question": "Hány másodperc van egy napon?",
     "answers": [
-      { "text": "6", "correct": false },
-      { "text": "5", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "8", "correct": true }
+      { "text": "81,640 másodperc", "correct": false },
+      { "text": "72,800 másodperc", "correct": false },
+      { "text": "84,000 másodperc", "correct": false },
+      { "text": "86,400 másodperc", "correct": true }
+    ]
+  },{
+    "topic":"math",
+    "question": "Mi a Pi értéke?",
+    "answers": [
+      { "text": "3.14734", "correct": false },
+      { "text": "3.14159", "correct": true },
+      { "text": "3.14634", "correct": false },
+      { "text": "3.14812", "correct": false }
+    ]
+  },{
+    "topic":"math",
+    "question": "Mi 45×25+452?",
+    "answers": [
+      { "text": "1577", "correct": true },
+      { "text": "1552", "correct": false },
+      { "text": "1622", "correct": false },
+      { "text": "1532", "correct": false }
+    ]
+  },{
+    "topic":"math",
+    "question": "Mi 807+542+277?",
+    "answers": [
+      { "text": "1621", "correct": false },
+      { "text": "1616", "correct": false },
+      { "text": "1626", "correct": true },
+      { "text": "1632", "correct": false }
+    ]
+  },{
+    "topic":"math",
+    "question": "Mi 2×(3+6)×8+6?",
+    "answers": [
+      { "text": "60", "correct": false },
+      { "text": "150", "correct": true },
+      { "text": "102", "correct": false },
+      { "text": "90", "correct": false }
     ]
   },{
     "topic":"geography",
-    "question": "milyen messze van debrecen és budapest?",
+    "question": "Milyen messze van Debrecen és Budapest légvonalban?",
     "answers": [
+      { "text": "~293 km", "correct": false },
+      { "text": "~194 km", "correct": true },
+      { "text": "~231 km", "correct": false },
+      { "text": "~178 km", "correct": false }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Mi Németország fővárosa?",
+    "answers": [
+      { "text": "Bécs", "correct": false },
+      { "text": "Frankfurt am Main", "correct": false },
+      { "text": "München", "correct": false },
+      { "text": "Berlin", "correct": true }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Hány országgal határos Magyarország?",
+    "answers": [
+      { "text": "7", "correct": true },
       { "text": "6", "correct": false },
-      { "text": "5", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "8", "correct": true }
+      { "text": "8", "correct": false },
+      { "text": "9", "correct": false }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Melyik ország NEM tagja az Európai Uniónak?",
+    "answers": [
+      { "text": "Finnország", "correct": false },
+      { "text": "Írország", "correct": false },
+      { "text": "Svájc", "correct": true },
+      { "text": "Málta", "correct": false }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Melyik ország tagja az Európai Uniónak?",
+    "answers": [
+      { "text": "Ciprus", "correct": true },
+      { "text": "Moldova", "correct": false },
+      { "text": "Szerbia", "correct": false },
+      { "text": "Egyesült Királyság", "correct": false }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Melyik ország NEM egy Balti ország?",
+    "answers": [
+      { "text": "Észtország", "correct": false },
+      { "text": "Finnország", "correct": true },
+      { "text": "Litvánia", "correct": false },
+      { "text": "Lettország", "correct": false }
+    ]
+  },{
+    "topic":"geography",
+    "question": "Melyik országgal határos Lichtenstein?",
+    "answers": [
+      { "text": "Ausztria", "correct": true },
+      { "text": "Németország", "correct": false },
+      { "text": "Svájc", "correct": true },
+      { "text": "Olaszország", "correct": false }
+    ]
+  },{
+    "topic":"history",
+    "question": "Mikor fedezték fel amerikát?",
+    "answers": [
+      { "text": "1492", "correct": true },
+      { "text": "1396", "correct": false },
+      { "text": "1469", "correct": false },
+      { "text": "1502", "correct": false }
+    ]
+  },{
+    "topic":"history",
+    "question": "Mikor kezdődött az első világháború?",
+    "answers": [
+      { "text": "1940", "correct": false },
+      { "text": "1918", "correct": false },
+      { "text": "1914", "correct": true },
+      { "text": "1907", "correct": false }
+    ]
+  },{
+    "topic":"history",
+    "question": "Melyik a világ legrégebbi civilizációja?",
+    "answers": [
+      { "text": "Indiai", "correct": false },
+      { "text": "Kínai", "correct": false },
+      { "text": "Azték", "correct": false },
+      { "text": "Mezopotámia", "correct": true }
+    ]
+  },{
+    "topic":"history",
+    "question": "Ki találta fel az elektromos fényt?",
+    "answers": [
+      { "text": "Isaac Newton", "correct": false },
+      { "text": "Thomas Edison", "correct": true },
+      { "text": "Nikola Tesla", "correct": false },
+      { "text": "Alexander Bell", "correct": false }
+    ]
+  },{
+    "topic":"history",
+    "question": "Julius Caesar melyik városban született?",
+    "answers": [
+      { "text": "Firenze", "correct": false },
+      { "text": "Bologna", "correct": false },
+      { "text": "Róma", "correct": true },
+      { "text": "Nápoly", "correct": false }
+    ]
+  },{
+    "topic":"history",
+    "question": "Kit neveznek a tudományos szocializmus megalapítójának?",
+    "answers": [
+      { "text": "Karl Marx", "correct": true },
+      { "text": "Vlagyimir Iljics Lenin", "correct": false },
+      { "text": "Josip Tito", "correct": false },
+      { "text": "Joszif Sztálin", "correct": false }
+    ]
+  },{
+    "topic":"history",
+    "question": "Melyik találmány NEM Kínából származik?",
+    "answers": [
+      { "text": "Papír", "correct": false },
+      { "text": "Szappan", "correct": true },
+      { "text": "Iránytű", "correct": false },
+      { "text": "Puskapor", "correct": false }
     ]
   },{
     "topic":"physics",
-    "question": "hány atom van a vasban?",
+    "question": "Mi a rugóállandó képlete?",
     "answers": [
-      { "text": "6", "correct": false },
-      { "text": "5", "correct": false },
-      { "text": "3", "correct": false },
-      { "text": "8", "correct": true }
+      { "text": "D = F/x", "correct": true },
+      { "text": "F = D/x", "correct": false },
+      { "text": "x = D*F", "correct": false },
+      { "text": "D = x*F", "correct": false }
+    ]
+  },{
+    "topic":"physics",
+    "question": "Mi a hullámhossz jele?",
+    "answers": [
+      { "text": "A", "correct": false },
+      { "text": "T", "correct": false },
+      { "text": "λ", "correct": true },
+      { "text": "f", "correct": false }
+    ]
+  },{
+    "topic":"physics",
+    "question": "Mi a rezgésszám (frekvencia) mértékegysége?",
+    "answers": [
+      { "text": "db", "correct": false },
+      { "text": "Hz", "correct": true },
+      { "text": "m", "correct": false },
+      { "text": "s", "correct": false }
+    ]
+  },{
+    "topic":"physics",
+    "question": "Milyen sebességgel terjed az elektromágneses mező vákuumban?",
+    "answers": [
+      { "text": "3 * 10^9 m/h", "correct": false },
+      { "text": "3 * 10^8 m/s", "correct": true },
+      { "text": "3 * 10^12 km/s", "correct": false },
+      { "text": "3 * 10^6 cm/s", "correct": false }
+    ]
+  },{
+    "topic":"physics",
+    "question": "A hanghullámnak mi NEM jellemzője?",
+    "answers": [
+      { "text": "A hang erőssége", "correct": false },
+      { "text": "A hang távolsága", "correct": true },
+      { "text": "A hang magassága", "correct": false },
+      { "text": "A hang színe", "correct": false }
+    ]
+  },{
+    "topic":"physics",
+    "question": "Minek nevezzük az elektromágneses hullámok frekvencia vagy hullámhossz szerinti sorozatát?",
+    "answers": [
+      { "text": "Mágnestartomány", "correct": false },
+      { "text": "Elektromágneses hullámtartomány", "correct": false },
+      { "text": "Elektromágneses színkép", "correct": true },
+      { "text": "Elektromágneses fekvenciasík", "correct": false }
     ]
   }
 ]

@@ -29,13 +29,22 @@ body.wrong {
 .container {
     position: absolute;
     background-color: white;
-    width: 75vh;
+    min-width: 75vh;
+    max-width: 80%;
     height: 70%;
+<<<<<<< HEAD
     top: 15%;
     left: 30%;
     /*transition: all 0.3s ease;*/
     border-radius: 8px;
 
+=======
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+>>>>>>> 10f726b67730de99249e86ce252e527430018202
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 
                 0 10px 20px 0 rgba(0, 0, 0, 0.34);
 }
@@ -229,15 +238,16 @@ table {
     gap: 5vh;
     row-gap: 2vh;
     column-gap: 3vh;
-    width: 50%;
+    min-width: 50%;
     position: absolute;
-    margin-left: 6vh;
-    top: 30vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn {
-    height: 5vh;
-    width: 30vh;
+    min-height: 5vh;
+    min-width: 30vh;
     font-size: 2vh;
     cursor: pointer;
     border-radius: 15px;
