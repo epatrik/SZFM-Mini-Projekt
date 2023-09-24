@@ -120,10 +120,11 @@ table {
 #skrumblak {
     font-family: 'Dosis', sans-serif;
     text-align: center;
-    font-size: 5vh;
+    font-size: 7vh;
     color: white;
-    margin-top: 2vh;
-    text-shadow: 2px 2px 5px black;
+    margin-top: 1vh;
+    font-weight: bold;
+    text-shadow: 4px 4px 3px black;
 }
 
 #topic-title {
