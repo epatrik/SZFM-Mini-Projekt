@@ -8,6 +8,23 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
 
 ## Projektterv
 
+### Szerepkörök
+
+| Név | Felelősségi kör | Munka felosztása|
+|-----|-----------------|-----------------|
+| Csepreghy Tamás | Programozó | Frontend |
+| Eperjesi Patrik | Programozó | Backend |
+| Vadon Dániel | Programozó | Backend |
+
+### Ütemterv
+
+| Feladat | Határidő |
+|---------|----------|
+| Program funkcióinak megírása | 2023.09.24.|
+| Megfelelő programkinézet megvalósítása | 2023.09.24. |
+| Json-be kérdések megírása | 2023.09.24 |
+| Tesztlog megírása | 2023.09.24. |
+
 ## Üzleti folyamatok modellje
 
 ### Üzleti szereplők
