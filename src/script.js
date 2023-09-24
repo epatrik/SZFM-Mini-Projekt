@@ -77,6 +77,7 @@ function answerSelected(e) {
     }
     if (questions.length <= questionNumber + 1) {
         backButton.classList.add('hide');
+        nextButton.innerText = "Befejezés";
         endOfQuiz = true;
     }
 }
@@ -98,6 +99,7 @@ function clearStatusClass(element) {
 function showEndScreen() {
     resetScreen();
     questionBlock.classList.remove('hide')
+    nextButton.innerText = "Következő";
     answers.classList.add('hide')
     question.innerText = '\n\n\nElért eredmény: \n' + score + '/' + questions.length
     backButton.innerText = 'Bezár'
