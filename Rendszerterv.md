@@ -216,6 +216,8 @@ Az eredmények az egyes felhasználók és kvízek közötti kapcsolatot jelenti
 
 ## Architektúrális terv
 
+![architek_terv](Image/architekturalis_terv.png)
+
 ## Tesztterv
 
 1. Bevezetés
