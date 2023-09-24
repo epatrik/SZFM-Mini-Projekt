@@ -221,3 +221,13 @@ table {
     width: 30vh;
     font-size: 2vh;
 }
+
+.correct {
+    background-color: rgb(159, 255, 159);
+    transition: all 0.6s ease-in;
+}
+
+.wrong {
+    background-color: rgb(255, 167, 167);
+    transition: all 0.2s ease-in;
+}
