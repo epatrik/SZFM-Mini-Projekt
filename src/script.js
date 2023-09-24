@@ -23,6 +23,8 @@ topicButtons.forEach(function (button) {
 });
 
 let questionNumber = 0;
+let score = 0;
+let endOfQuiz = false;
 var questionTopic = "";
 var questions = {};
 
@@ -35,6 +37,7 @@ function startQuiz() {
     });
     shuffleQuestions(questions);
     questionNumber = 0;
+    score = 0;
     startButton.classList.add('hide');
     showQuestion();
     backButton.classList.remove('hide');
@@ -67,12 +70,13 @@ function answerSelected(e) {
     Array.from(answers.children).forEach(button => {
     setStatusClass(button, button.dataset.correct)
     button.classList.add('no-click')
-  })
-  if (questions.length > questionNumber + 1) {
     nextButton.classList.remove('hide')
-  } else {
-    backButton.innerText = 'Újrakezdés'
-    nextButton.classList.add('hide')
+  })
+  if (correct) {
+    score++
+  }
+  if (questions.length <= questionNumber + 1) {
+    endOfQuiz = true
   }
 }
 
@@ -90,11 +94,21 @@ function clearStatusClass(element) {
     element.classList.remove('wrong')
 }
 
+function showEndScreen() {
+    resetScreen();
+    questionBlock.classList.remove('hide')
+    answers.classList.add('hide')
+    question.innerText = '\n\n\nElért eredmény: \n' + score + '/' + questions.length
+    backButton.innerText = 'Újrakezdés'
+    backButton.classList.remove('hide')
+}
+
 function resetScreen() {
     nextButton.classList.add('hide');
     backButton.innerText = 'Vissza';
     backButton.classList.add('hide');
     questionBlock.classList.add('hide');
+    answers.classList.remove('hide')
     topicBlock.classList.add('hide');
     while (answers.firstChild) {
         answers.removeChild(answers.firstChild)
@@ -103,6 +117,7 @@ function resetScreen() {
 
 function resetQuiz() {
     resetScreen();
+    endOfQuiz = false
     startButton.classList.remove('hide');
     topicBlock.classList.remove('hide');
 }
@@ -111,5 +126,10 @@ function nextQuestion() {
     questionNumber += 1;
     resetScreen();
     backButton.classList.remove('hide')
-    showQuestion();
+    if (endOfQuiz) {
+        showEndScreen();
+    }
+    else {
+        showQuestion();
+    }
 }
