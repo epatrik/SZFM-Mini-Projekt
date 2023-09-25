@@ -6,6 +6,7 @@ const question = document.getElementById('question');
 const questionBlock = document.getElementById('question-block');
 const topicBlock = document.getElementById('topic-block');
 const topicButtons = document.querySelectorAll('.topic');
+const topicTitle = document.getElementById('topic-title');
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
@@ -32,6 +33,8 @@ import allQuestions from './questions.json' assert { type: 'json' };
 
 function startQuiz() {
     resetScreen();
+    question.classList.add('movedown');
+    topicTitle.classList.add('hide');
     questions = allQuestions.filter(function (question) {
         return question.topic === questionTopic;
     });
@@ -67,10 +70,12 @@ function shuffle(array) {
 
 function answerSelected(e) {
     const selectedButton = e.target
+    selectedButton.classList.add('selectans');
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answers.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
+        button.disabled = true;
         button.classList.add('no-click')
         nextButton.classList.remove('hide')
     })
@@ -122,6 +127,7 @@ function resetScreen() {
 }
 
 function resetQuiz() {
+    topicTitle.classList.remove('hide');
     resetScreen();
     endOfQuiz = false
     startButton.classList.remove('hide');
