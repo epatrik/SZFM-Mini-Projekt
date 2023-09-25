@@ -72,17 +72,17 @@ Ennek sikere továbbá a tanárok feladatain is könnyít, hogy ne kelljen belee
     Színes háttér, ami válaszadáskor megváltozik helyesség szerint.
     Vizuális jelzés, ha az egered egy gomb felett van.
 
-3. ### Kérdések véletlenszerű megjelenítése
+3. ### Kérdések és válaszok véletlenszerű megjelenítése
 
-    *Leírás követelmény specifikációban: A kérdéseknek minden indításkor véletlenszrű sorrendben kell megjelennie egymás után.*
+    *Leírás követelmény specifikációban: A kérdéseknek és válaszoknak minden indításkor véletlenszrű sorrendben kell megjelennie egymás után.*
 
-    Minden indításkor a kérdések sorrendje legyen randomizálva.
+    Minden indításkor a kérdések és válaszok sorrendje legyen randomizálva.
 
-4. ### Négy válaszlehetőség
+4. ### Több válaszlehetőség
 
-    *Leírás követelmény specifikációban: Minden kérdéshez legyen négy lehetséges válasz amire rá lehet kattintani.*
+    *Leírás követelmény specifikációban: Minden kérdéshez legyen több lehetséges válasz amire rá lehet kattintani.*
 
-    Minden alkalommal a négy lehetőség közül csak egy legyen helyes, a többi legyen helytelen.
+    Minden alkalommal a több lehetőség közül csak egy legyen helyes, a többi legyen helytelen.
 
 5. ### Válasz helyességének jelzése
 
