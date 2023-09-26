@@ -2,261 +2,297 @@
     display: none;
 }
 
-.no-click {
-    pointer-events: none;
-}
-
-.selected {
-    color: rgb(240, 243, 250);
-    font-weight: 600;
-    border: solid 2px rgb(0, 89, 255);
-    background-image: radial-gradient(circle, rgb(121, 147, 182), rgb(112, 136, 168), rgb(93, 118, 151));
-}
-
 body {
-    background-color: rgb(67, 186, 255);
-    transition: all 0.5s ease;
+    background-image: linear-gradient(to right, rgb(74, 46, 151) , rgb(158, 130, 236));
 }
 
-
-body.correct {
-    background-color: rgb(139, 255, 128);
-    transition: all 0.3s ease;
-}
-
-body.wrong {
-    background-color: rgb(255, 110, 110);
-    transition: all 0.3s ease;
+.selected{
+    color:rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(39, 24, 95) , rgb(103, 77, 175));
+    border: solid 0.2vh rgb(65, 13, 255);
+    font-weight: bold;
 }
 
 .container {
-    position: absolute;
-    background-color: white;
-    min-width: 75vh;
-    max-width: 80%;
-    height: 70%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    transition: all 0.3s ease;
-    border-radius: 1vh;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 
-                0 10px 20px 0 rgba(0, 0, 0, 0.34);
-}
-
-.footer {
-    position: absolute;
-    top: 53vh;
-    width: 100%;
-    left: 0;
-    border-top: solid 2px rgb(70, 70, 70);
-}
-
-#start {
-    position: absolute;
-    text-align: center;
-    top: 5.5vh;
-    left: 43.66%;
-    font-size: 2vh;
-    font-family: 'Dosis', sans-serif;
-    padding: 1vh 2vh;
-    background-color: white;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: solid 1px black;
-    transition: all 0.3s ease;
-}
-
-#start:disabled {
-    background-color: white;
-    color: darkgrey;
-    cursor: auto;
-}
-
-#start:hover:enabled {
-    background-image: radial-gradient(circle, rgb(50, 180, 255), rgb(25, 171, 255), rgb(0, 162, 255));
-    color: rgb(255, 255, 255);
-    text-wrap: black;
-    outline: solid 1px rgb(0, 52, 110);
-    transition: all 0.3s ease;
-}
-
-#topic-block {
-    transition: all 0.3s ease;
-}
-
-table, tr, td {
-    transition: all 0.3s ease;
-}
-
-td {
-    text-align: center;
-    width: 0vh;
-    height: 0vh;
-    border-radius: 8px;
-    border: solid 1px grey;
-}
-
-tr, td {
-    width: 73vh;
-}
-
-table {
-    position: absolute;
-    top: 22vh;
-    left: 1vh;
-    width: 73vh;
-    height: 30vh;
-    background-color: rgb(176, 204, 240);
-}
-
-#topic-block {
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-}
-
-#skrumblak {
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-size: 7vh;
-    color: white;
-    margin-top: 1vh;
-    font-weight: bold;
-    text-shadow: 4px 4px 3px black;
-}
-
-#topic-title {
-    position: absolute;
-    top: 3vh;
-    left: 0;
-    font-size: 5vh;
-    font-weight: bold;
-    border-bottom: solid 2px rgb(70, 70, 70);
-    padding-top: 5vh;
-    padding-bottom: 6.5vh;/*
-    padding-left: 17.75vh;
-    padding-right: 17.75vh;*/
-    width: 100%;
-    /*transition: all 0.3s ease;*/
-
-}
-
-#topic-block button {
-    width: 100%;
-    height: 100%;
-    font-size: 3vh;
-    outline: none;
-    border: solid 1px rgb(53, 53, 53);
-    justify-content: center;
-    font-family: 'Dosis', sans-serif;
-    /*background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));*/
-    background-color: rgb(238, 238, 238);
-    border-radius: 8px;
-}
-
-#topic-block button:hover {
-    background-color: rgb(166, 207, 241);
-    transition: all 0.3s ease;
-}
-
-.topic {
-    text-align: center;
-}
-
-#back {
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top: 5.5vh;
-    left: 5%;
-    font-size: 2vh;
-    font-family: 'Dosis', sans-serif;
-    padding: 1vh 2vh;
-    background-color: white;
-    border: solid 1px grey;
-    border-radius: 5px;
-    cursor: pointer;
-    background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));
-}
-
-#back:hover {
-    background-image: radial-gradient(circle, rgb(235, 235, 235), rgb(230, 230, 230), rgb(225, 225, 225));
-    color: black;
-    transition: all 0.3s ease;
-}
-
-#next {
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    top: 5.5vh;
-    left: 79%;
-    font-size: 2vh;
-    font-family: 'Dosis', sans-serif;
-    padding: 1vh 2vh;
-    background-color: white;
-    border: solid 1px grey;
-    border-radius: 5px;
-    cursor: pointer;
-    background-image: radial-gradient(circle, rgb(245, 245, 245), rgb(240, 240, 240), rgb(235, 235, 235));
-}
-
-#next:hover {
-    background-image: radial-gradient(circle, rgb(235, 235, 235), rgb(230, 230, 230), rgb(225, 225, 225));
-    color: black;
-    transition: all 0.3s ease;
-}
-
-#question {
-    text-align: center;
-    padding-top: 6vh;
-    font-size: 4vh;
-    padding: 4vh;
-    font-family: 'Dosis', sans-serif;
-    font-weight: bold;
-    border-bottom: solid 2px rgb(70, 70, 70);
-    padding-bottom: 6vh;
-}
-
-#answers {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 5vh;
-    row-gap: 2vh;
-    column-gap: 3vh;
-    min-width: 50%;
+    width: 40vh;
+    height:44vh;
+    background-image: linear-gradient(to right, rgb(34, 18, 90) , rgb(46, 29, 119));
+    box-shadow: 0vh 1vh 1.5vh rgb(37, 14, 92);
+    border: solid 0.2vh rgb(32, 9, 94);
+    border-radius: 0.25vh;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.btn {
-    min-height: 5vh;
-    min-width: 30vh;
-    font-size: 2vh;
-    cursor: pointer;
-    border-radius: 15px;
-    border: solid 1px rgb(92, 92, 92);
     font-family: 'Dosis', sans-serif;
 }
 
-.btn:hover {
-    background-color: rgb(172, 210, 233);
-    transition: all 0.2s ease;
-    border: solid 1px rgb(0, 61, 153);
+#skrumblak {
+    background-image: linear-gradient(to right, rgb(39, 24, 95) , rgb(103, 77, 175));
+    font-size: 5vh;
+    min-width: 30%;
+    max-width: 40%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border: solid 0.2vh rgb(32, 9, 94);
+    border-radius: 1vh;
+    box-shadow: 0vh 0.6vh 0.9vh rgb(31, 12, 82);
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    text-shadow: 0vh 1vh 1vh rgb(31, 11, 78);
+    cursor: default;
 }
 
-.btn.correct {
-    background-color: rgb(159, 255, 159);
-    border: solid 1px rgb(6, 160, 6);
-    transition: all 0.6s ease-in;
+#skrumblak:hover {
+    background-image: linear-gradient(to right, rgb(61, 41, 133) , rgb(124, 96, 201));
+}
+
+#topic-title {
+    position: absolute;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    border-bottom: solid 0.2vh rgb(121, 97, 209);
+    width: 38vh;
+    top: 0vh;
+    padding-left: 2vh;
+    text-shadow: 0vh 1vh 1vh rgb(31, 11, 78);
+    background-image: linear-gradient(to right, rgb(43, 24, 95) , rgb(98, 77, 175));
+    box-shadow: 0vh 1vh 2vh rgb(31, 11, 78);
+}
+
+table, tr, td {
+    text-align: center;
+}
+
+td { 
+    box-shadow: 0vh 0.5vh 0.8vh rgb(28, 7, 105);
+    width: 10vh;
+}
+
+table {
+    position: absolute;
+    width: 30vh;
+    left: 2.5vh;
+    top: 11vh;
+    /*background-image: linear-gradient(to right, rgb(34, 18, 90) , rgb(46, 29, 119));*/
+    padding: 5vh 2vh;
+    border-radius: 0.5vh;
+    /*box-shadow: 0vh 0.5vh 0.8vh rgb(16, 7, 48);*/
+}
+
+#topic-block button {
+    width: 30vh;
+    height: 3vh;
+    cursor: pointer;
+    font-size: 2vh;
+    font-family: 'Dosis', sans-serif;
+    border: solid 0.2vh rgb(153, 124, 255);
+    border-radius: 0.4vh;
+    background-color: rgb(240, 237, 255);
+}
+
+#topic-block button:hover:not(.selected) {
+    background-image: linear-gradient(to right, rgb(115, 90, 185) , rgb(149, 123, 245));
+}
+
+.footer {
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(43, 24, 95) , rgb(98, 77, 175));
+    border-top: solid 0.2vh rgb(121, 97, 209);
+    top: 38vh;
+    height: 6vh;
+    width: 40vh;
+    box-shadow: 0vh -1vh 2vh rgb(31, 11, 78);
+}
+
+#start {
+    text-align: center;
+    position: absolute;
+    left: 16.25vh;
+    top: 1vh;
+    width: 7vh;
+    height: 4vh;
+    border-radius: 5vh;
+    font-size: 1.5vh;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(217, 211, 255);
+    border: solid 0.2vh rgb(54, 35, 158);
+}
+
+#start:hover:enabled {
+    background-color:rgb(141, 111, 247);
+    color: white;
+    font-weight: bold;
+    border: solid 0.2vh rgb(183, 163, 255);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#question-block {
+    width: 100%;
+    height: 38vh;
+}
+
+#question {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+    text-shadow: 0vh 0.4vh 0.8vh rgb(20, 15, 48);
+    background-image: linear-gradient(to right, rgb(39, 24, 95) , rgb(103, 77, 175));
+    width: 40vh;
+    min-height: 10vh;
+    max-height: 10vh;
+    padding-top: 2vh;
+    top: 0vh;
+    border-bottom: solid 0.2vh rgb(121, 97, 209);
+    box-shadow: 0vh 1vh 2vh rgb(31, 11, 78);
+}
+
+.movedown {
+    animation-name: move-down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-down {
+    from {top: 0vh;}
+    to {top: 3vh;}
+}
+
+.moveup {
+    animation-name: move-up;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move-up {
+    from {top: 3vh;}
+    to {top: 0vh;}
+}
+
+#back {
+    text-align: center;
+    position: absolute;
+    left: 1vh;
+    top: 1vh;
+    width: 7vh;
+    height: 4vh;
+    border-radius: 5vh;
+    font-size: 1.5vh;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(217, 211, 255);
+    border: solid 0.2vh rgb(54, 35, 158);
+}
+
+#back:hover {
+    background-color:rgb(141, 111, 247);
+    color: white;
+    font-weight: bold;
+    border: solid 0.2vh rgb(183, 163, 255);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#next {
+    text-align: center;
+    position: absolute;
+    left: 32vh;
+    top: 1vh;
+    width: 7vh;
+    height: 4vh;
+    border-radius: 5vh;
+    font-size: 1.5vh;
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(217, 211, 255);
+    border: solid 0.2vh rgb(54, 35, 158);
+}
+
+#next:hover {
+    background-color:rgb(141, 111, 247);
+    color: white;
+    font-weight: bold;
+    border: solid 0.2vh rgb(183, 163, 255);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#answers {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 1vh;
+    row-gap: 1vh;
+    top: 42.5%;
+    left: 3vh;
+    width: 35vh;
+}
+
+.btn {
+    width: 16vh;
+    height: 3vh;
+    font-size: 1.5vh;
+    border-radius: 1.5vh;
+    background-color:rgb(200, 190, 255);
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:rgb(151, 139, 221);
+    transition: all 0.3s ease;
 }
 
 .btn.wrong {
-    background-color: rgb(255, 167, 167);
-    border: solid 1px rgb(165, 5, 5);
-    transition: all 0.2s ease-in;
+    border: solid 1px rgb(255, 0, 106);
+    color: white;
+    font-weight: bold;
+    background-color: rgb(153, 0, 38);
+    text-shadow: 0vh 0.2vh 0.5vh rgb(20, 15, 48);
+    transition: all 0.2s ease;
+}
+
+.btn.correct {
+    border: solid 1px rgb(0, 255, 115);
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 150, 80);
+    text-shadow: 0vh 0.2vh 0.5vh rgb(20, 15, 48);
+    transition: all 0.2s ease;
+    animation-name: correctans;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes correctans {
+    from {background-color: rgb(0, 150, 80);}
+    to {background-color: rgb(0, 124, 66);}
+}
+
+.btn.selectans {
+    border: solid 0.4vh rgb(178, 164, 255);
+}
+
+#question-number {
+    position: absolute;
+    top: 0.15vh;
+    color: rgb(239, 235, 255);
+    font-family: 'Dosis', sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+    text-shadow: 0vh 0.2vh 0.2vh rgb(24, 6, 71);
+    background-image: linear-gradient(to right, rgb(25, 14, 63) , rgb(72, 51, 145));
+    width: 39.5vh;
+    padding-left: 0.5vh;
+    border-bottom: solid 0.4vh rgb(121, 97, 209);
 }
