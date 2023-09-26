@@ -7,6 +7,7 @@ const questionBlock = document.getElementById('question-block');
 const topicBlock = document.getElementById('topic-block');
 const topicButtons = document.querySelectorAll('.topic');
 const topicTitle = document.getElementById('topic-title');
+const questionCounter = document.getElementById('question-number');
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', nextQuestion);
@@ -47,8 +48,11 @@ function startQuiz() {
 }
 
 function showQuestion() {
+    topicTitle.classList.add('movedown');
     questionBlock.classList.remove('hide');
     question.innerText = questions[questionNumber].question;
+    questionCounter.innerText = questionNumber + '/' + questions.length
+    questionCounter.classList.remove('hide');
     var answerlist = questions[questionNumber].answers;
     shuffle(answerlist)
     answerlist.forEach(answer => {
@@ -108,7 +112,7 @@ function showEndScreen() {
     questionBlock.classList.remove('hide')
     nextButton.innerText = "Következő";
     answers.classList.add('hide')
-    question.innerText = '\n\n\nElért eredmény: \n' + score + '/' + questions.length
+    question.innerText = 'Elért eredmény: \n' + score + '/' + questions.length
     backButton.innerText = 'Bezár'
     backButton.classList.remove('hide')
 }
@@ -120,6 +124,7 @@ function resetScreen() {
     questionBlock.classList.add('hide');
     answers.classList.remove('hide')
     topicBlock.classList.add('hide');
+    questionCounter.classList.add('hide');
     clearStatusClass(document.body);
     while (answers.firstChild) {
         answers.removeChild(answers.firstChild)
@@ -132,6 +137,7 @@ function resetQuiz() {
     endOfQuiz = false
     startButton.classList.remove('hide');
     topicBlock.classList.remove('hide');
+    topicTitle.classList.add('moveup');
 }
 
 function nextQuestion() {
