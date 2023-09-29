@@ -140,7 +140,7 @@
     "answers": [
       { "text": "Banglades", "correct": true },
       { "text": "Afganisztán", "correct": false },
-      { "text": "Mongólia", "correct": true },
+      { "text": "Mongólia", "correct": false },
       { "text": "Nepál", "correct": false },
       { "text": "Vietnám", "correct": false },
       { "text": "Oroszország", "correct": false },
