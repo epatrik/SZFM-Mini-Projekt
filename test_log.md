@@ -43,3 +43,13 @@
 | T38 | 2023.09.24 | Csepreghy Tamás | A gombok szövegei nem-e lógnak ki a keretükből méretváltozás esetén | Nem lógnak ki a szövegek | Nem lógtak ki a szövegek | Átment
 | T39 | 2023.09.24 | Csepreghy Tamás | Betűtípus beimportálása és felhasználása css-ben | A beimportált betűtípus használható és működik | A beimportált betűtípus működött | Átment |
 | T40 | 2023.09.24 | Csepreghy Tamás | Az ablak átméretezése esetén a kvíz alkalmazkodik az új felbontáshoz | Alkalmazkodik az új felbontáshoz | Alkalmazkodott az új felbontáshoz | Átment | 
+| T41 | 2023.10.02 | Eperjesi Patrik | A kezdés gomb lenyomása témaválasztás nélkül Microsoft Edge-ben| Nem lehet interaktálni a gombbal | Nem lehet interaktálni a gombbal | Átment |
+| T42 | 2023.10.02 | Eperjesi Patrik | A kezdés gomb lenyomása témaválasztással Microsoft Edge-ben | Megjelenik az első kérdés | Megjelenik az első kérdés | Átment |
+| T43 | 2023.10.02 | Eperjesi Patrik | Json-ben helyesnek jelölt válasz választása Microsoft Edge-ben| Zöld hátterű lesz a választott gomb | Zöld hátterű lett a választott gomb | Átment |
+| T44 | 2023.10.02 | Eperjesi Patrik | Json-ben hibásnak jelölt válasz választása Microsoft Edge-ben| Piros hátterű lesz a választott gomb | Piros hátterű lett a választott gomb | Átment |
+| T45 | 2023.10.02 | Eperjesi Patrik | Kérdések téma szerinti szűrésének tesztelése Microsoft Edge-ben| Csak a kijelölt téma kérdései jelennek meg | Csak a kijelölt téma kérdései jelentek meg | Átment |
+| T46 | 2023.10.02 | Eperjesi Patrik | Kilépés gomb tesztelése Microsoft Edge-ben| Minden kérdésnél van lehetőség visszalépni a kezdőképernyőre | Minden kérdésnél van lehetőség visszalépni a kezdőképernyőre | Átment |
+| T47 | 2023.10.02 | Eperjesi Patrik | Pontszám tesztelése Microsoft Edge-ben| A helyes válaszokkal megegyező a kapott pontok száma | A helyes válaszokkal megegyező a kapott pontok száma | Átment |
+| T48 | 2023.10.02 | Eperjesi Patrik | Eredmény kiírása Microsoft Edge-ben| Eredmény kiírása az utolsó kérdés után | Kiiratta az eredményt | Átment |
+| T49 | 2023.10.02 | Eperjesi Patrik | Összes kérdés megjelenítése adott témában Microsoft Edge-ben| Végigmegy az összes kérdésen az adott témából | Végigment az összes kérdésen az adott témából | Átment |
+| T50 | 2023.10.02 | Eperjesi Patrik | Több jó válasz tesztelése Microsoft Edge-ben| Minden jó válasz beleszámít a pontszámba | Minden jó válasz beleszámít a pontszámba | Átment |
